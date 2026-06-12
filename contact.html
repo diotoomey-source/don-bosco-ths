@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Don Bosco Technical High School</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand">
+      <div class="logo-circle">DB</div>
+      <div>
+        <span class="school-name">Don Bosco THS</span>
+        <span class="school-tagline">Monrovia, Liberia</span>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-eyebrow light">Get In Touch</p>
+      <h1 class="light">Contact Us</h1>
+      <p class="page-hero-sub">We'd love to hear from you — whether you're a prospective student, parent, or partner.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT INFO + FORM -->
+  <section class="section">
+    <div class="container two-col">
+
+      <div class="contact-info">
+        <p class="section-eyebrow">Find Us</p>
+        <h2>School Information</h2>
+
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <div>
+            <h4>Address</h4>
+            <p>8 Street Sinkor, Monrovia, Liberia</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-icon">📞</span>
+          <div>
+            <h4>Phone</h4>
+            <p><a href="tel:+231880743396">+231 88 074 3396</a></p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-icon">✉️</span>
+          <div>
+            <h4>Email</h4>
+            <p><a href="mailto:dbthsmonrovia@gmail.com">dbthsmonrovia@gmail.com</a></p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-icon">🕐</span>
+          <div>
+            <h4>School Hours</h4>
+            <p>Monday – Friday: 7:30 AM – 3:00 PM</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-icon">⭐</span>
+          <div>
+            <h4>Rating</h4>
+            <p>4.7 Stars — Monrovia, Liberia</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT FORM -->
+      <div class="contact-form-wrap">
+        <p class="section-eyebrow">Send a Message</p>
+        <h2>We'll Get Back to You</h2>
+        <div class="contact-form">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Your full name" />
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="your@email.com" />
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" placeholder="e.g. Admission Enquiry" />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" placeholder="Write your message here..."></textarea>
+          </div>
+          <button class="btn-primary full-width" onclick="handleSubmit()">Send Message</button>
+          <p class="form-note" id="form-note" style="display:none;">✅ Message sent! We'll be in touch soon.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAP PLACEHOLDER -->
+  <section class="section bg-green-light">
+    <div class="container">
+      <p class="section-eyebrow">Location</p>
+      <h2>Find Us in Sinkor, Monrovia</h2>
+      <div class="map-placeholder">
+        <div class="map-pin">📍</div>
+        <p><strong>Don Bosco Technical High School</strong></p>
+        <p>8 Street Sinkor, Monrovia, Liberia</p>
+        <a href="https://maps.google.com/?q=Don+Bosco+Technical+High+School+Monrovia+Liberia" target="_blank" class="btn-primary" style="margin-top:1rem; display:inline-block;">Open in Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="logo-circle small">DB</div>
+        <p class="footer-school">Don Bosco Technical High School</p>
+        <p class="footer-motto">Laborare ET Liberate</p>
+      </div>
+      <div>
+        <p>📍 8 Street Sinkor, Monrovia, Liberia</p>
+        <p>📞 +231 88 074 3396</p>
+        <p>✉️ dbthsmonrovia@gmail.com</p>
+      </div>
+      <div>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="about.html">About</a></p>
+        <p><a href="programs.html">Programs</a></p>
+        <p><a href="achievements.html">Achievements</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 Don Bosco Technical High School. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('open');
+    }
+    function handleSubmit() {
+      document.getElementById('form-note').style.display = 'block';
+    }
+  </script>
+</body>
+</html>

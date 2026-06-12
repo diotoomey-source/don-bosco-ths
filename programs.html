@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Programs — Don Bosco Technical High School</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand">
+      <div class="logo-circle">DB</div>
+      <div>
+        <span class="school-name">Don Bosco THS</span>
+        <span class="school-tagline">Monrovia, Liberia</span>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="programs.html" class="active">Programs</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-eyebrow light">What We Offer</p>
+      <h1 class="light">Our Programs</h1>
+      <p class="page-hero-sub">Practical skills. Real careers. A path to freedom through work.</p>
+    </div>
+  </section>
+
+  <!-- HIGH SCHOOL PROGRAMS -->
+  <section class="section">
+    <div class="container">
+      <p class="section-eyebrow">High School</p>
+      <h2>Technical Programs for High School Students</h2>
+      <p class="section-intro">Our high school students choose a technical track alongside their core academics — graduating with both a diploma and a marketable skill.</p>
+
+      <div class="prog-detail-grid">
+
+        <div class="prog-detail-card">
+          <div class="prog-detail-header web">
+            <span class="prog-big-icon">💻</span>
+          </div>
+          <div class="prog-detail-body">
+            <h3>Web Development</h3>
+            <p>Students learn to design and build websites using modern tools and technologies. From HTML and CSS to interactive design, this program prepares graduates for the growing digital economy in Liberia and beyond.</p>
+            <ul>
+              <li>Website design & layout</li>
+              <li>Front-end development</li>
+              <li>Digital skills for employment</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="prog-detail-card">
+          <div class="prog-detail-header elec">
+            <span class="prog-big-icon">⚡</span>
+          </div>
+          <div class="prog-detail-body">
+            <h3>Electricity</h3>
+            <p>A hands-on program covering electrical theory and practical wiring. Students graduate ready to work in construction, maintenance, and electrical services — one of the most in-demand trades in Liberia.</p>
+            <ul>
+              <li>Electrical wiring & safety</li>
+              <li>Circuit theory</li>
+              <li>Industrial & residential applications</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="prog-detail-card">
+          <div class="prog-detail-header sew">
+            <span class="prog-big-icon">🧵</span>
+          </div>
+          <div class="prog-detail-body">
+            <h3>Sewing</h3>
+            <p>From basic stitching to full garment construction, the sewing program equips students — especially young women — with skills to launch their own fashion businesses or join the textile industry.</p>
+            <ul>
+              <li>Garment making & pattern cutting</li>
+              <li>Fashion design basics</li>
+              <li>Entrepreneurship in textiles</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="prog-detail-card">
+          <div class="prog-detail-header draw">
+            <span class="prog-big-icon">📐</span>
+          </div>
+          <div class="prog-detail-body">
+            <h3>Technical Drawing</h3>
+            <p>Precision, spatial reasoning, and design principles are taught in this program. Graduates pursue careers in architecture, engineering, and construction — fields critical to Liberia's development.</p>
+            <ul>
+              <li>Architectural drawing</li>
+              <li>Engineering diagrams</li>
+              <li>Design & measurement</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TVET -->
+  <section class="section bg-dark">
+    <div class="container">
+      <p class="section-eyebrow light">Vocational Training</p>
+      <h2 class="light">TVET — Technical & Vocational Education and Training</h2>
+      <div class="two-col">
+        <div class="text-block">
+          <p style="color:#ccc;">The TVET program at Don Bosco is a separate track from the high school — open to students who want focused, trade-level skill training. It is a direct pathway to employment and entrepreneurship, providing Liberians with certified vocational qualifications.</p>
+          <p style="color:#ccc;">TVET programs are fully aligned with national development goals, helping to build Liberia's skilled workforce one graduate at a time.</p>
+          <a href="contact.html" class="btn-outline-light" style="margin-top:1rem; display:inline-block;">Enquire About TVET</a>
+        </div>
+        <div class="tvet-highlights">
+          <div class="tvet-item">✅ Trade service training</div>
+          <div class="tvet-item">✅ Industry-relevant skills</div>
+          <div class="tvet-item">✅ Nationally recognised certification</div>
+          <div class="tvet-item">✅ Separate from high school track</div>
+          <div class="tvet-item">✅ Pathway to employment</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UNIFORM NOTE -->
+  <section class="section">
+    <div class="container">
+      <p class="section-eyebrow">School Identity</p>
+      <h2>Our Uniform</h2>
+      <div class="uniform-grid">
+        <div class="uniform-card boys">
+          <span style="font-size:3rem;">👦</span>
+          <h3>Boys</h3>
+          <p>Khaki trousers with a white shirt — clean, professional, and focused.</p>
+        </div>
+        <div class="uniform-card girls">
+          <span style="font-size:3rem;">👧</span>
+          <h3>Girls</h3>
+          <p>Green jumper with a white shirt — representing growth and excellence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="logo-circle small">DB</div>
+        <p class="footer-school">Don Bosco Technical High School</p>
+        <p class="footer-motto">Laborare ET Liberate</p>
+      </div>
+      <div>
+        <p>📍 8 Street Sinkor, Monrovia, Liberia</p>
+        <p>📞 +231 88 074 3396</p>
+        <p>✉️ dbthsmonrovia@gmail.com</p>
+      </div>
+      <div>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="about.html">About</a></p>
+        <p><a href="programs.html">Programs</a></p>
+        <p><a href="achievements.html">Achievements</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 Don Bosco Technical High School. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
